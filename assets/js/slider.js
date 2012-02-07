@@ -40,7 +40,7 @@
         });
 
         var $slide = $('.slider__slide', $el);
-        var $sliderBg = $('.slider__bg', $el);
+        var $sliderBg = $('.slider', $el);
         var $slideNumber = $('.slider__number', $slide);
 
         var sliderWidth = $slide.width();

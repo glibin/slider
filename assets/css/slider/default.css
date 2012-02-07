@@ -6,8 +6,10 @@
 }
 .slider {
   position: relative;
+  height: 15px;
 }
 .slider__bg {
+  margin-top: 5px;
   height: 5px;
   background-color: #000000;
   border-radius: 3px;
