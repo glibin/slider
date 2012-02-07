@@ -1,6 +1,6 @@
 
 gh-pages:
-	rm -f ../slider-gh-pages/assets/*
+	rm -rf ../slider-gh-pages/assets/*
 	cp -r css ../slider-gh-pages/assets/
 	cp -r js ../slider-gh-pages/assets/
 
