@@ -1,12 +1,14 @@
-@sliderHeight: 5px;
+@sliderHeight: 15px;
+@sliderBgHeight: 5px;
 @sliderRadius: 3px;
 @sliderBackground: #000;
+@sliderBoxShadow: ~"0px 1px 0px #888";
 
 @sliderSlideHeight: 15px;
 @sliderSlideWidth: @sliderSlideHeight;
 @sliderSlideRadius: 7px;
 @sliderSlideBackground: #A0A0A0;
-@sliderSlideBoxShadow: ~"0px 1px 0px #000, inset 0px 1px 0px #fff";
+@sliderSlideBoxShadow: ~"inset 0px -1px 0px #000, inset 0px 1px 0px #fff";
 
 @sliderNumberOffset: 3px;
 @sliderNumberColor: white;
@@ -42,12 +44,15 @@
 
 .slider {
     position: relative;
+    height: @sliderHeight;
+    padding-top: (@sliderHeight - @sliderBgHeight) / 2;
 }
 
 .slider__bg {
-    height: @sliderHeight;
+    height: @sliderBgHeight;
     background-color: @sliderBackground;
     .border-radius(@sliderRadius);
+    .box-shadow-full(@sliderBoxShadow);
 }
 
 .slider__slide {
