@@ -28,10 +28,10 @@
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   -o-border-radius: 7px;
-  -webkit-box-shadow: 0px 1px 1px #000, inset 0px 1px 1px #fff;
-  -moz-box-shadow: 0px 1px 1px #000, inset 0px 1px 1px #fff;
-  -o-box-shadow: 0px 1px 1px #000, inset 0px 1px 1px #fff;
-  box-shadow: 0px 1px 1px #000, inset 0px 1px 1px #fff;
+  -webkit-box-shadow: 0px 1px 0px #000, inset 0px 1px 0px #fff;
+  -moz-box-shadow: 0px 1px 0px #000, inset 0px 1px 0px #fff;
+  -o-box-shadow: 0px 1px 0px #000, inset 0px 1px 0px #fff;
+  box-shadow: 0px 1px 0px #000, inset 0px 1px 0px #fff;
 }
 .slider__number {
   position: absolute;
