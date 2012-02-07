@@ -1,0 +1,74 @@
+@sliderHeight: 5px;
+@sliderRadius: 3px;
+@sliderBackground: #000;
+
+@sliderSlideHeight: 15px;
+@sliderSlideWidth: @sliderSlideHeight;
+@sliderSlideRadius: 7px;
+@sliderSlideBackground: #A0A0A0;
+@sliderSlideBoxShadow: ~"0px 1px 1px #000, inset 0px 1px 1px #fff";
+
+@sliderNumberOffset: 3px;
+@sliderNumberColor: white;
+@sliderNumberSize: 14px;
+
+.border-radius (@radius) {
+            border-radius: @radius;
+       -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+         -o-border-radius: @radius;
+}
+
+.box-shadow-full (@data) {
+    -webkit-box-shadow: @data;
+       -moz-box-shadow: @data;
+         -o-box-shadow: @data;
+            box-shadow: @data;
+}
+
+.box-shadow (@x, @y, @blur, @color) {
+    -webkit-box-shadow: @x @y @blur @color;
+       -moz-box-shadow: @x @y @blur @color;
+         -o-box-shadow: @x @y @blur @color;
+            box-shadow: @x @y @blur @color;
+}
+
+.disable-select {
+     -moz-user-select: none;
+   -khtml-user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider__bg {
+    height: @sliderHeight;
+    background-color: @sliderBackground;
+    .border-radius(@sliderRadius);
+}
+
+.slider__slide {
+    position: absolute;
+    left: 0px;
+    top: -1 * (@sliderSlideHeight - @sliderHeight) / 2;
+    display: block;
+    cursor: pointer;
+
+    height: @sliderSlideHeight;
+    width: @sliderSlideWidth;
+    background-color: @sliderSlideBackground;
+
+    .border-radius(@sliderSlideRadius);
+    .box-shadow-full(@sliderSlideBoxShadow);
+}
+
+.slider__number {
+    position: absolute;
+    top: -1 * @sliderSlideHeight - @sliderNumberOffset;
+    color: @sliderNumberColor;
+    font-size: @sliderNumberSize;
+    .disable-select;
+}
