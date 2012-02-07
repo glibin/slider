@@ -40,7 +40,7 @@
         });
 
         var $slide = $('.slider__slide', $el);
-        var $sliderBg = $('.slider__bg', $el);
+        var $sliderBg = $('.slider', $el);
         var $slideNumber = $('.slider__number', $slide);
 
         var sliderWidth = $slide.width();
@@ -81,6 +81,9 @@
             pos = (e.offsetX / options.width) * (options.max - options.min);
             render();
             options.change(parseInt(pos));
+            offset = 0;
+            prev = e.pageX;
+            mouseDown = true;
         });
 
         $(window).mousemove(function(e) {
