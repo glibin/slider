@@ -47,6 +47,7 @@
         
         p {
             color: white;
+            text-shadow: 0px 1px 0px #4d4d4d;
         }
 
         code, pre {
@@ -62,7 +63,6 @@
             color: #DFC484;
 
             padding: 5px;
-
         }
 
         pre {
@@ -70,8 +70,10 @@
 
             padding: 15px;
             margin: 15px 0;
-
-
+        }
+        
+        code .string, pre .string {
+            color: #BCD279;
         }
 
         .slider-container {
@@ -103,7 +105,12 @@
         <p><div class="slider-container"></div></p>
 
         <h2>Usage:</h2>
-        
+
+        <p>Include:</p>
+        <pre>
+&lt;script src="<span class="string">js/slider.js</span>"&gt;&lt;/script&gt;
+&lt;link href="<span class="string">css/slider/default.css</span>" rel="<span class="string">stylesheet</span>"&gt;</pre>
+
         <p>HTML:</p>
         <pre>&lt;div class="slider-container"&gt;&lt;/div&gt</pre>
         <p>Javascript:</p>
