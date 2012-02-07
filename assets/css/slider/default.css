@@ -7,9 +7,9 @@
 .slider {
   position: relative;
   height: 15px;
+  padding-top: 5px;
 }
 .slider__bg {
-  margin-top: 5px;
   height: 5px;
   background-color: #000000;
   border-radius: 3px;
@@ -24,7 +24,7 @@
 .slider__slide {
   position: absolute;
   left: 0px;
-  top: -5px;
+  top: 0px;
   display: block;
   cursor: pointer;
   height: 15px;
