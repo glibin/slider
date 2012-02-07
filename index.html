@@ -5,13 +5,59 @@
 
     <title>Simple javascript slider</title>
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://github.com/glibin/slider/raw/master/js/slider.js"></script>
+
+    <link href="https://raw.github.com/glibin/slider/master/css/slider/default.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+
+
     <style type="text/css">
+        .container {
+            width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-top: 40px;
+        }
+
+        body {
+            background-color: #6E6E6E;
+
+            font-family: 'Asap', sans-serif;
+        }
+
+        h1 {
+            color: white;
+            font-weight: normal;
+            text-shadow: 0px 2px 0px #4d4d4d;
+        }
     </style>
+
+    <script>
+        jQuery(function(){
+            jQuery('.slider-container').slider({
+                'change' : function(pos) {
+                    // Event on change
+                }
+            });
+        });
+    </script>
+
 </head>
 
 <body>
 
+    <div class="container">
+        <h1>Simple JavaScript Slider</h1>
 
+        <div class="slider-container"></div>
+    </div>
 
 </body>
 </html>
