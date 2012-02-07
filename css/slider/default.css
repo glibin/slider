@@ -6,11 +6,11 @@
 }
 .slider {
   position: relative;
-  height: 15px;
+  height: 9px;
   padding-top: 5px;
 }
 .slider__bg {
-  height: 5px;
+  height: 4px;
   background-color: #000000;
   border-radius: 3px;
   -moz-border-radius: 3px;
@@ -24,20 +24,24 @@
 .slider__slide {
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -0.5px;
   display: block;
   cursor: pointer;
   height: 15px;
   width: 15px;
-  background-color: #a0a0a0;
+  background-color: #afafaf;
   border-radius: 7px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   -o-border-radius: 7px;
-  -webkit-box-shadow: inset 0px -1px 0px #000, inset 0px 1px 0px #fff;
-  -moz-box-shadow: inset 0px -1px 0px #000, inset 0px 1px 0px #fff;
-  -o-box-shadow: inset 0px -1px 0px #000, inset 0px 1px 0px #fff;
-  box-shadow: inset 0px -1px 0px #000, inset 0px 1px 0px #fff;
+  -webkit-box-shadow: inset 0px -1px 0px #222, inset 0px 1px 0px #e9e9e9;
+  -moz-box-shadow: inset 0px -1px 0px #222, inset 0px 1px 0px #e9e9e9;
+  -o-box-shadow: inset 0px -1px 0px #222, inset 0px 1px 0px #e9e9e9;
+  box-shadow: inset 0px -1px 0px #222, inset 0px 1px 0px #e9e9e9;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#afafaf), to(#8f8f8f));
+  background: -moz-linear-gradient(top, #afafaf, #8f8f8f);
+  -ms-filter: progid:dximagetransform.microsoft.gradient(startColorStr=#afafaf, endColorStr=#8f8f8f);
+  filter: progid:dximagetransform.microsoft.gradient(startColorStr=#afafaf, endColorStr=#8f8f8f);
 }
 .slider__number {
   position: absolute;
