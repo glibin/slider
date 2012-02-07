@@ -10,10 +10,10 @@
     $.Slider = function(el, options) {
         options = $.extend({}, {
             'min' : 0,
-            'max' : 1000,
+            'max' : 100,
             'pos' : 0,
             'width' : 150,
-            'koef': 1,
+            'coef': 1,
 
             change: function() {}
         }, options);
@@ -68,7 +68,7 @@
         }
 
         function step() {
-            pos += (offset / options.width) * (options.max - options.min) * options.koef;
+            pos += (offset / options.width) * (options.max - options.min) * options.coef;
             offset = 0;
 
             if (pos <= options.min) pos = options.min;
