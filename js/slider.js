@@ -78,7 +78,7 @@
         }
 
         $sliderBg.mousedown(function(e) {
-            pos = (e.offsetX / options.width) * (options.max - options.min);
+            pos = ((e.offsetX ? e.offsetX : (e.pageX - $sliderBg.offset().left)) / options.width) * (options.max - options.min);
             render();
             options.change(parseInt(pos));
             offset = 0;
