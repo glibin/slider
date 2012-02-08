@@ -57,7 +57,7 @@
 
         function render() {
             $slide.css({
-                'left' : (pos / (options.max - options.min)) * options.width - sliderWidth/2
+                'left' : (pos / (options.max - options.min)) * (options.width - sliderWidth)
             });
 
             $slideNumber.html(parseInt(pos));
