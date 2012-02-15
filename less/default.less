@@ -20,6 +20,7 @@
        -moz-border-radius: @radius;
     -webkit-border-radius: @radius;
          -o-border-radius: @radius;
+            border-radius: @radius;
 }
 
 .box-shadow-full (@data) {
@@ -72,7 +73,7 @@
     cursor: pointer;
 
     height: @sliderSlideHeight;
-    width: @sliderSlideWidth;
+    width: @sliderSlideWidth - 1px;
     background-color: @sliderSlideBackground;
 
     .border-radius(@sliderSlideRadius);
